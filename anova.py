@@ -2,7 +2,7 @@
 Example of using pycirculate with a simple Flask RESTful API.
 Make sure to send requests with the HTTP header "Content-Type: application/json".
 """
-from flask import Flask, request, jsonify, abort, make_response
+from flask import Flask, request, jsonify, abort, make_response, render_template
 from pycirculate.anova import AnovaController
 import logging
 import sys
