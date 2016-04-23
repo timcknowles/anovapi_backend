@@ -3,10 +3,11 @@ Example of using pycirculate with a simple Flask RESTful API.
 Make sure to send requests with the HTTP header "Content-Type: application/json".
 """
 from flask import Flask, request, jsonify, abort, make_response, render_template
+from flask.ext.cors import CORS
 from pycirculate.anova import AnovaController
 import logging
 import sys
-
+logging.getLogger('flask_cors').level = logging.DEBUG
 app = Flask(__name__)
 
 ANOVA_MAC_ADDRESS = "F4:B8:5E:AF:F8:D6"
