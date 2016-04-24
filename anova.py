@@ -9,6 +9,7 @@ import logging
 import sys
 logging.getLogger('flask_cors').level = logging.DEBUG
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 ANOVA_MAC_ADDRESS = "F4:B8:5E:AF:F8:D6"
 

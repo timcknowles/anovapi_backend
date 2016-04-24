@@ -19,7 +19,7 @@
 			$.ajax({
 			  type: 'post',
 			  url: 'http://192.168.0.13:5000/start',
-			  dataType: 'jsonp',
+			  dataType: 'json',
 			  success: function(data) {
 			     $("#message").html(data);
 			  }
